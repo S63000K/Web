@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="./PICTURES/South Asian Countries_transparent.png">
+    <title>South Asian Countries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin: 0;
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+        .nav-link{
+            margin-top: 25px;
+            color: black;
+        }
+        
+        .nav-bar{
+            width: 100%;
+            position: fixed;
+            background-color: transparent;
+
+        }
+        .navbar-fixed{
+            top: 0px;  
+            margin: 0%;
+            background-color: wheat
+        }
+        .nav-link:hover{
+            border-radius: 8px;
+            background-color: yellow;
+            box-shadow: 3px 3px 3px 3px#333;
+        }
+        a{
+            color: #333;
+        }
+        a:link{
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            margin: 0;
+        }
+        .countries {
+            text-underline-offset: none;
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .countries ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .countries ul li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px; 
+            transition: opacity 0.3s ease; 
+        }
+        .countries ul li:hover {
+            background-color: yellow;
+            opacity: 0.8; 
+            box-shadow: 3px 3px 3px 3px#333;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="nav-bar" id="nav-bar" style="height: 100px;">
+        <div class="d-flex flex-wrap justify-content-center " style="width: 100%;">
+            <a href="./home.html" class="d-flex align-items-center  mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none mx-3 ">
+                <img src="PICTURES/South Asian Countries_transparent.png" width="75px" class="bi me-2" style="margin-top: 8px !important;" alt="Logo">
+            </a> 
+            <ul class="nav nav-pills" >
+                <li class="nav-item"><a href="./home.html" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="./country.html" class="nav-link">Learning </a></li>
+                <li class="nav-item"><a href="./quiz.html" class="nav-link">Quiz</a></li>
+                <li class="nav-item"><a href="http://192.168.78.217:3000" class="nav-link" >Feedback</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 100px;">
+        <div class="countries">
+            <h2>Countries</h2>
+            <ul>
+                <li><a href="./afghanistan.html">Afghanistan</a></li>
+                <li><a href="./bangladesh.html">Bangladesh</a></li>
+                <li><a href="./bhutan.html">Bhutan</a></li>
+                <li><a href="./india.html">India</a></li>
+                <li><a href="./maldives.html">Maldives</a></li>
+                <li><a href="./nepal.html">Nepal</a></li>
+                <li><a href="./pakistan.html">Pakistan</a></li>
+                <li><a href="./srilanka.html">Sri Lanka</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <strong><h2>Welcome to South Asian Countries!</h2></strong>
+            <h2>Basic information about South Asian countries</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WjCflPcooj8?si=rmLFGOCLzy23e2sG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div style="width: 150%;">
+            <p><strong>India:</strong> The largest country in South Asia by both land area and population, India is known for its diverse culture, languages, and traditions. It is a federal democratic republic with a rich history dating back thousands of years.</p>
+            <p><strong>Pakistan:</strong> Situated to the northwest of India, Pakistan shares cultural, historical, and geographical links with India. It was formed in 1947 as a separate nation for Muslims following the partition of British India.</p>
+            <p><strong>Bangladesh:</strong> Located to the east of India, Bangladesh was part of Pakistan until its independence in 1971. It is known for its vibrant culture, dense population, and significant contributions to the global textile industry.</p>
+            <p><strong>Nepal:</strong> Nestled in the Himalayas, Nepal is renowned for its stunning mountain landscapes, including Mount Everest, the world's tallest peak. It is a landlocked country with a diverse culture and rich religious heritage.</p>
+            <p><strong>Sri Lanka:</strong> An island nation in the Indian Ocean, Sri Lanka boasts stunning beaches, ancient ruins, and lush tea plantations. It has a diverse population comprising various ethnic groups and religions.</p>
+            <p><strong>Bhutan:</strong> Located in the eastern Himalayas, Bhutan is known for its commitment to Gross National Happiness (GNH) and sustainable development. It is famous for its stunning monasteries, fortresses (dzongs), and pristine natural beauty.</p>
+            <p><strong>Maldives:</strong> Comprising a chain of 26 atolls in the Indian Ocean, the Maldives is renowned for its luxurious resorts, crystal-clear waters, and vibrant marine life. It is one of the world's top tourist destinations, particularly for honeymooners and divers.</p>
+            <p><strong>Afghanistan:</strong> While primarily considered a part of South Asia due to its geographical proximity, Afghanistan's culture and history are more closely linked with Central Asia and the Middle East. It has faced significant challenges, including conflict and political instability, for several decades.</p>
+        </div>
+        
+    </div>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("nav-bar").classList.add("navbar-fixed");
+            } else {
+                document.getElementById("nav-bar").classList.remove("navbar-fixed");
+            }
+        }
+        function more(){
+            window.location.href = "./country.html"
+        }
+    </script>
+</body>
+</html>

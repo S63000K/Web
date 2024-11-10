@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./PICTURES/South Asian Countries_transparent.png">
+    <title>South Asian Countries Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            background-image: url('');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options {
+            list-style-type: none;
+            padding: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://i.pinimg.com/736x/ac/8a/98/ac8a9800d2da365cec124cb1adce792b.jpg" alt="Background-Image" style="width: 100%;padding: 0px;top: 0px; position: fixed;z-index: -1;">
+    <div class="container">
+        <h1>South Asian Countries Quiz</h1>
+
+        <div class="question">
+            <p>1. Which South Asian country's flag features a green field with a large white crescent moon and a five-pointed star in the center?</p>
+            <ul class="options">
+                <li><input type="radio" name="q1" value="Bangladesh"> Bangladesh</li>
+                <li><input type="radio" name="q1" value="Pakistan"> Pakistan</li>
+                <li><input type="radio" name="q1" value="Sri Lanka"> Sri Lanka</li>
+                <li><input type="radio" name="q1" value="Maldives"> Maldives</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>2. What is the capital of Nepal, a country known for its majestic Himalayan mountains?</p>
+            <ul class="options">
+                <li><input type="radio" name="q2" value="Dhaka"> Dhaka </li>
+                <li><input type="radio" name="q2" value="Islamabad"> Islamabad</li>
+                <li><input type="radio" name="q2" value="Kathmandu"> Kathmandu</li>
+                <li><input type="radio" name="q2" value="Colombo"> Colombo</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>3. Who is the current Prime Minister of India, a South Asian country with a diverse cultural heritage and one of the largest economies in the world?</p>
+            <ul class="options">
+                <li><input type="radio" name="q3" value="Imran Khan"> Imran Khan</li>
+                <li><input type="radio" name="q3" value="Narendra Modi"> Narendra Modi</li>
+                <li><input type="radio" name="q3" value="Sheikh Hasina">Sheikh Hasina</li>
+                <li><input type="radio" name="q3" value="Mahinda Rajapaksa">  Mahinda Rajapaksa</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>4. Can you identify the South Asian country based on its map, which has borders with India, China, and Myanmar??</p>
+            <ul class="options">
+                <li><input type="radio" name="q4" value="Bhutan"> Bhutan</li>
+                <li><input type="radio" name="q4" value="Pakistan"> Pakistan</li>
+                <li><input type="radio" name="q4" value="Sri Lanka"> Sri Lanka</li>
+                <li><input type="radio" name="q4" value="Bangladesh"> Bangladesh</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>5. Which South Asian country is led by Prime Minister Sheikh Hasina, and its flag features a red disc representing the sun on a green background?</p>
+            <ul class="options">
+                <li><input type="radio" name="q5" value="India"> India</li>
+                <li><input type="radio" name="q5" value="Bangladesh">Bangladesh</li>
+                <li><input type="radio" name="q5" value="Sri Lanka"> Sri Lanka</li>
+                <li><input type="radio" name="q5" value="Maldives"> Maldives</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>6. Which country does this flag belong to?</p>
+            <img src="./PICTURES/Indiaflag.jpg" alt="Flag">
+            <ul class="options">
+                <li><input type="radio" name="q6" value="India"> India</li>
+                <li><input type="radio" name="q6" value="Pakistan"> Pakistan</li>
+                <li><input type="radio" name="q6" value="Sri Lanka"> Sri Lanka</li>
+                <li><input type="radio" name="q6" value="Bangladesh"> Bangladesh</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>7. Who is the current Prime Minister of Afghanistan?</p>
+            <ul class="options">
+                <li><input type="radio" name="q7" value="Hasan Akhund"> Hasan Akhund</li>
+                <li><input type="radio" name="q7" value="Imran Khan"> Imran Khan</li>
+                <li><input type="radio" name="q7" value="Narendra Modi"> Narendra Modi</li>
+                <li><input type="radio" name="q7" value="Sheikh Hasina"> Sheikh Hasina</li>
+            </ul>
+        </div>
+        <div class="question">
+            <p>8. Which country does this flag belong to?</p>
+            <img src="./PICTURES/Afghanistanflag.jpeg" alt="Flag">
+            <ul class="options">
+                <li><input type="radio" name="q8" value="India"> India</li>
+                <li><input type="radio" name="q8" value="Pakistan"> Pakistan</li>
+                <li><input type="radio" name="q8" value="Maldives"> Maldives</li>
+                <li><input type="radio" name="q8" value="Afghanistan"> Afghanistan</li>
+            </ul>
+        </div>
+        <button class="submit-btn" onclick="submitQuiz()">Submit Quiz</button>
+        <a href="./Main.html"><button class="submit-btn">Back</button></a>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const answers = [];
+            const radioInputs = document.querySelectorAll('input[type="radio"]:checked');
+            radioInputs.forEach(input => {
+                answers.push(input.value);
+            });
+
+            const correctAnswers = ["Pakistan", "Kathmandu", "Narendra Modi", "Bhutan", "Bangladesh", "India", "Hasan Akhund", "Afghanistan"];
+            let score = 0;
+            for (let i = 0; i < correctAnswers.length; i++) {
+                const currentAnswer = answers[i];
+                const correctAnswer = correctAnswers[i];
+                if (currentAnswer === correctAnswer) {
+                    score++;
+                }
+            }
+
+            const totalQuestions = correctAnswers.length;
+            const result = `You scored ${score} out of ${totalQuestions}.`;
+            alert(result);
+        }
+    </script>
+</body>
+</html>

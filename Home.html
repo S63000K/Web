@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./PICTURES/South Asian Countries_transparent.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>South Asian Countries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .background_image{
+            background: url("./PICTURES/Background1.jpeg") no-repeat center; 
+            background-size: cover;
+            background-size: 100% 100%;
+            position: relative;  
+        }
+    
+        #head_fi {
+            background-color: transparent;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-family: "Sofia", sans-serif;
+            font-size: 50px;
+        }
+
+        marquee {
+            font-size: 1.5em;
+            color: goldenrod;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+        }
+
+        .nav-link{
+            margin-top: 25px;
+            color: black;
+        }
+        .nav-bar{
+            width: 100%;
+            position: fixed;
+            background-color: transparent;
+
+        }
+
+        .navbar-fixed{
+            top: 0px;  
+            margin: 0%;
+            background-color: wheat
+        }
+        .nav-link:hover{
+            border-radius: 8px;
+            background-color: yellow;
+            box-shadow: 3px 3px 3px 3px#333;
+        }
+        
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+ 
+        .container{
+            display: flex;
+
+        }
+
+        .country{
+            margin-top: 30px;
+            margin-right: 10px;
+            width: 350px;
+            height: 350px;
+            border: 1px gray solid;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+            font-weight: 800;
+        }  
+
+        .country_name{
+            padding-top: 30px;
+            size: 10px; 
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        .image{
+            padding-left: 10px;
+            width: 100%;
+            height: 50%;
+        }
+
+        .available{
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 0px;
+            font-family: sans-serif;
+            font-size: large;
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            padding-right: 10px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+        footer{
+            padding-top: 30px;
+            background-color: rgb(36, 144, 227);
+        }
+        .fixed{
+            background-color: lightgrey;
+            margin-bottom: 0px !important;
+        }
+
+    </style>
+</head>
+
+<body class="background">
+    <div class="background_image">
+        <header id="head_fi">
+            <marquee behavior="scroll" direction="left">
+                <h1 class="font-effect-fire">South Asian Countries</h1>
+            </marquee>
+        </header>
+        <div class="nav-bar" id="nav-bar" style="height: 100px;">
+            <div class="d-flex flex-wrap justify-content-center " style="width: 100%;">
+                <a href="./home.html" class="d-flex align-items-center  mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none mx-3 ">
+                    <img src="PICTURES/South Asian Countries_transparent.png" width="75px" class="bi me-2" style="margin-top: 8px !important;" alt="Logo">
+                </a> 
+                <ul class="nav nav-pills" >
+                    <li class="nav-item"><a href="./home.html" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="./country.html" class="nav-link">Learning </a></li>
+                    <li class="nav-item"><a href="./Signin.html" class="nav-link">Log In</a></li>
+                    <li class="nav-item"><a href="Sign Up.html" class="nav-link" >Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="maps-flags"style="margin-top: 100px;height:440px;">
+            <div style="padding-left: 70%;">
+                <h2 style="text-align: center;font-weight: 600;">Flags</h2>
+                <img src="./PICTURES/Southasianflag.jpeg" height="200" width="250px" alt="South Asian Flags">
+            </div>
+        </section><br>
+    </div>
+
+    <footer class="px-5">
+        <div class="row">
+          <div class="col-5 col-md-2 mb-3 ">
+            <img src="PICTURES/South Asian Countries_transparent.png" width="90px" alt="Logo" style="padding-left: 20px; margin-top: 0px;">
+            
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2">Contact</li>
+              <li class="nav-item mb-2">Phone : +91 6300014504</li>
+              <li class="nav-item mb-2">Email : sailesh@gmail.com</li>
+            </ul>
+          </div>
+  
+          <div class="col-6 col-md-2 mb-3">
+            <p style="padding-left: 18px; margin-bottom: 0px;margin-top: 20px;">Quick Links</p >
+            <ul class="nav flex-column">
+              <li class="nav-item mb-0"><a href="#" class="nav-link p-0 mt-3 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-0"><a href="#" class="nav-link p-0 mt-2 text-body-secondary">About</a></li>
+              <li class="nav-item mb-0"><a href="#" class="nav-link p-0 mt-2 text-body-secondary">Products</a></li>
+              <li class="nav-item mb-0"><a href="#" class="nav-link p-0 mt-2 text-body-secondary">Contact</a></li>
+              <li class="nav-item mb-0"><a href="#" class="nav-link p-0 mt-2 text-body-secondary">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <p style="padding-left: 20px; margin-bottom: 0px; margin-top: 20px">Policies</p >
+            <ul class="nav flex-column">
+              <li class="nav-item mb-0"><a href="./privacy_policy.html" class="nav-link p-0 mt-3 text-body-secondary">Privacy Policy</a></li>
+              <li class="nav-item mb-0"><a href="./terms.html" class="nav-link p-0 mt-2 text-body-secondary">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <p style="margin-top: 20px">Subscribe to our newsletter</p >
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Enter your Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="fixed mx-auto py-4 my-4 border-top">
+          <p class="text-center text-body-secondary">Made for Mini-Project</p>
+        </div>
+      </footer>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("nav-bar").classList.add("navbar-fixed");
+            } else {
+                document.getElementById("nav-bar").classList.remove("navbar-fixed");
+            }
+        }
+        function more(){
+            window.location.href = "./country.html"
+        }
+    </script>
+</body>
+</html>

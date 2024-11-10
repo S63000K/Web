@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./PICTURES/South Asian Countries_transparent.png">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .background_image {
+            background: url("./PICTURES/Southasianflags.png") no-repeat center; 
+            background-size: cover;
+            position: fixed; 
+            width: 100%; 
+            height: 100%;
+            top: 0; 
+            left: 0;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 100px rgb(0, 0, 0);
+        }
+        h1 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: blue;  
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", function(event) {
+                event.preventDefault(); 
+                const fullname = document.getElementById("fullname").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const country = document.getElementById("country").value.trim();
+                const city = document.getElementById("city").value.trim();
+                const pincode = document.getElementById("pincode").value.trim();
+                const phno = document.getElementById("phno").value.trim();
+                let isValid = true;
+                if (fullname === "") {
+                    isValid = false;
+                    alert("Please enter your full name.");
+                }
+                if (email === "") {
+                    isValid = false;
+                    alert("Please enter your email.");
+                } else if (!isValidEmail(email)) {
+                    isValid = false;
+                    alert("Please enter a valid email address.");
+                }
+                if (country === "" || country === "Select a country") {
+                    isValid = false;
+                    alert("Please select your country.");
+                }
+                if (city === "") {
+                    isValid = false;
+                    alert("Please enter your city.");
+                }
+                if (pincode === "") {
+                    isValid = false;
+                    alert("Please enter your pin code.");
+                } else if (!/^\d{6}$/.test(pincode)) {
+                    isValid = false;
+                    alert("Pin code should be exactly 6 numbers.");
+                }
+                if (phno === "") {
+                    isValid = false;
+                    alert("Please enter your phone number.");
+                } else if (!/^\d{10}$/.test(phno)) {
+                    isValid = false;
+                    alert("Phone number should be exactly 10 numbers.");
+                }
+                if (isValid) {
+                    form.submit();
+                }
+            });
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="background_image">
+    <h1>Registration</h1>
+
+    <form action="Home.html" method="post">
+        <table>
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" id="fullname" name="fullname" ></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label for="country">Country</label></td>
+                <td>
+                    <select id="country" name="country" >
+                        <option value="Select a country">Select a country</option>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="india">India</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="sri_lanka">Sri Lanka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td><input type="text" id="city" name="city" ></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">Pin Code</label></td>
+                <td><input type="text" id="pincode" name="pincode" ></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Phone No</label></td>
+                <td><input type="tel" id="phno" name="phno" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
